@@ -42,3 +42,4 @@ setTimeout(() => {
     clearTimeout (timeout)
     console.log('timeout islem iptal edildi, interval devam edecek.')
 }, 3000)
+ //bu bir testtir v2
