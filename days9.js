@@ -33,7 +33,7 @@ setTimeout(sayHello,1000) // kodun gecikmeli calismasini saglar,bir kez calistir
 
 const interval = setInterval(sayHello,1000)
 
-setTimeout(()=>{
+const timeout = setTimeout(()=>{
     clearInterval(setInterval)
     console.log('Interval islemi iptal!')
 },5000)
@@ -42,5 +42,61 @@ setTimeout(() => {
     clearTimeout (timeout)
     console.log('timeout islem iptal edildi, interval devam edecek.')
 }, 3000)
- //bu bir testtir v2
- // calistiiii !!!!
+ 
+let users = [
+    {
+        id: 1,
+        name: 'Abdurrahman',
+        age : 20,
+        gender : 1
+    },
+    {
+        id : 2,
+        name : "Aysenur",
+        age  : 22,
+        gender : 2
+
+    },
+    {
+        id : 3,
+        name : "Zayid",
+        age : 32,
+        gender : 1
+    },
+    {
+        id : 4,
+        name : "Haticenur",
+        age : 13,
+        gender : 2
+    }
+]
+
+users = users.map (users => {
+    if (users.id == 2){
+        users.name = "Hakan"
+    }
+    return users
+})
+
+console.log(users)
+
+console.log(numbers.filter(number => number > 3) // veri icinden deger filtrelemek icin kullanilabilir 
+)
+
+  console.log(
+    numbers.reduce((oldValue,currentValue)=>{
+        return oldValue + currentValue
+       
+    },0 )
+  )
+  console.log(users.every(user => user.gender == 1))
+  console.log(users.some(user => user.gender == 1))
+
+  const currentUser = users.find(user=> user.id == 3)
+  console.log(currentUser) 
+
+  const names = ['Tayfun',"Ertan","Seval"]
+  const numaralar = [2,5,9,6,4,8,1,10,25,31]
+  names.sort((a,b)=>b-a) 
+  numaralar.sort((a,b)=>b-a)
+  console.log(names,numaralar)
