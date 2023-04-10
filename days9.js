@@ -59,7 +59,7 @@ let users = [
     },
     {
         id : 3,
-        name : "Zayid",
+        name : "Zahid",
         age : 32,
         gender : 1
     },
