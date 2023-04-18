@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>30DaysOfScript:Inline Script</title>
+        <style>
+            .error{
+                border : 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form" onsubmit="return false">
+        <input type="color" id="color-picker">
+        <input type="tel" id="name" placeholder="Adinizi yaziniz.">
+        <button id="save-btn">Kaydet</button>
+        <select id="gender">
+            <option value="">Sec</option>
+            <option value="erkek">Erkek</option>
+            <option value="kadin">Kadin</option>
+        </select>
+            <label>
+                <input type="checkbox" id="save-rules">
+                kurallari kabul ediyorum.
+            </label>
+            <div>
+                <label>
+                    <input type="radio" name="stack" value="lamp">
+                    LAMP
+                <label>
+                <input type="radio" name="stack" value="wamp">
+                WAMP
+            </label>
+            </div>
+        </form>
+        
+        <hr>
+       
+        <h1 class = "title-1">baslik 1</h1>
+        <h1 class = "title-1">baslik 2</h1>
+        <h1 class="test1 test2" id="title">baslik 3</h1>
+        <h1 class="title-2">baslik 4</h1>
+        <!-- <div class="title-1">bu bir divdir.</div>  -->
+        <button id="btn" onclick="clickHandle()">message</button>       
+        <button id="btn2" onclick="clickHandle()">message</button> 
+        <img src="https://github.com/Asabeneh/30-Days-Of-JavaScript/raw/master/images/banners/day_1_21.png" alt="">      
+        <script src="./days23.js"></script>
+    </body>
+</html>
