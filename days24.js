@@ -46,3 +46,44 @@ console.log(
 console.log(
     title.nextElementSibling.nextElementSibling
 )
+
+const scrollContent = document.querySelector('.scroll-concent')
+const scrollContent2 = document.querySelector('.scroll-concent2')
+const scrollDownBtn = document.getElementById('scroll-down')
+const scrollRigthBtn = document.getElementById('scroll-rigth')
+const scrollLeftBtn = document.getElementById('scroll-left')
+const scrollUpBtn = document.getElementById('scroll-up')
+
+console.log(
+    scrollContent.clientHeight,scrollContent2.clientWidth
+    );
+
+    scrollDownBtn.addEventListener('click', () => {
+        console.log(scrollContent.scrollTop += 50)
+    })
+
+    scrollRigthBtn.addEventListener('click', () => {
+        console.log(scrollContent2.scrollLeft +=50 )
+    })
+    
+    scrollLeftBtn.addEventListener('click', () => {
+        console.log(scrollContent2.scrollLeft -= 50)
+    })
+    
+    scrollUpBtn.addEventListener('click', () => {
+        console.log(scrollContent.scrollTop -= 50)
+    })
+    
+    scrollContent.addEventListener('scroll', e => {
+        if(scrollContent.scrollWidth - scrollContent.clientWidth == e.target.scrollLeft ){
+            scrollRigthBtn.setAttribute('disabled','disabled')
+        }else{
+            scrollRigthBtn.setAttribute('disabled')
+        }
+
+        if(e.target.scrollLeft == 0 ){
+            scrollLeftBtn.setAttribute('disabled','disabled')
+        }else{
+            scrollLeftBtn.removeAttribute('disabled')
+        }
+    })

@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <title>30DaysOfScript:Inline Script</title>
+        <style>
+            .scroll-concent{
+                scroll-behavior: smooth;
+            }
+        </style>
+        <style>
+            .scroll-concent2{
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
     <body>
 
+        
         <h1 title="test" style="background-color: yellow; color: red;" id="test" class="eskisehir"  >title</h1>
         <ul>
             <li class = "delete-btn">
@@ -36,7 +48,7 @@
     <p>paragraf</p>
 
     <hr>
-    <div class="scroll-concet" style="height: 70px; overflow: auto"> 
+    <div class="scroll-concent" style="height: 70px; overflow: auto"> 
     test <br>
     test <br>
     test <br>
@@ -51,6 +63,21 @@
     test <br>
     test <br>
     </div>
-        <script src="./days24.js"></script>
+
+    <button id="scroll-down">Asagiya kaydir</button>
+    <button id="scroll-rigth">Sag kaydir</button>
+    <button id="scroll-left">Sola kaydir</button>
+    <button id="scroll-up">Yukari cikar</button>
+
+    <div class="scroll-concent2" style="width: 200px; display: flex; white-space: nowrap; overflow: auto">
+        <div style="width:100px; flex-shrink: 0">test</div>
+        <div style="width:100px; flex-shrink: 0">test</div>
+        <div style="width:100px; flex-shrink: 0">test</div>
+        <div style="width:100px; flex-shrink: 0">test</div>
+        <div style="width:100px; flex-shrink: 0">test</div>
+        <div style="width:100px; flex-shrink: 0">test</div>
+      </div>
+      
+      <script src="./days24.js"></script>
     </body>
 </html>
